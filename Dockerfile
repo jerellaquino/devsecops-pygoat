@@ -3,7 +3,7 @@ FROM python:3.11.0b1-buster
 WORKDIR /app
 
 # dependencies for psycopg2
-RUN apt-get update && apt-get install --no-install-recommends -y dnsutils libpq-dev python3-dev \
+RUN apt-get update && apt-get install --no-install-recommends -y dnsutils libpq-dev python3-dev 
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
